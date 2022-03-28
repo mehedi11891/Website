@@ -112,7 +112,8 @@ Resuable Code Section
 }
 
 .container {
-  max-width: 140rem;
+  max-width: 100rem;
+  /* here max width was 140rem in thapa */
   margin: 0 auto;
 }
 
