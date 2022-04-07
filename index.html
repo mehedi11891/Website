@@ -6,7 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Website</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -104,7 +111,7 @@
           <a href="https://tinyurl.com/5b7fcb89" target="_blank" class="btn">Download CV</a>
         </div>
 
-        
+
       </div>
     </div>
   </section>
@@ -112,72 +119,340 @@
   <!-- ======================================== 
           Our portfolio Section Start  
     ======================================== -->
-    <section class="section section-portfolio" id="portfolio-section">
-      <div class="container">
-        <h2 class="common-heading">Latest Works</h2>
+  <section class="section section-portfolio" id="portfolio-section">
+    <div class="container">
+      <h2 class="common-heading">Latest Works</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ex
+        eos commodi provident tempore possimus, mollitia vero quas.
+      </p>
+    </div>
+
+    <div class="p-btns">
+      <div class="btn p-btn" data-btn-num="1">Website</div>
+      <div class="btn p-btn" data-btn-num="2">Youtube</div>
+      <div class="btn p-btn" data-btn-num="3">Design</div>
+    </div>
+
+    <div class="container grid grid-three-column portfolio-images">
+      <div class="img-overlay p-btn--1">
+        <img src="images/folio/1.jpg" alt="my works" />
+        <div class="overlay">
+          <a href="http://charcounter.thapaonlineclass.com/" target="_thapa" class="common-heading">Project 1</a>
+        </div>
+      </div>
+
+      <div class="img-overlay p-btn--3">
+        <img src="images/folio/4.jpg" alt="my works" />
+        <div class="overlay">
+          <a href="http://charcounter.thapaonlineclass.com/" target="_thapa" class="common-heading">Project 2
+          </a>
+        </div>
+      </div>
+
+      <div class="img-overlay p-btn--1">
+        <img src="images/folio/3.jpg" alt="portfolio images " />
+        <div class="overlay">
+          <a href="" target="_blank" class="common-heading">Project 3</a>
+        </div>
+      </div>
+      <div class="img-overlay p-btn--1 p-btn--2">
+        <img src="images/folio/4.jpg" alt="portfolio images " />
+        <div class="overlay">
+          <a href="" target="_blank" class="common-heading">Project 4</a>
+        </div>
+      </div>
+      <div class="img-overlay p-btn--2">
+        <img src="images/folio/5.jpg" alt="portfolio images " />
+        <div class="overlay">
+          <a href="" target="_blank" class="common-heading">Project 5</a>
+        </div>
+      </div>
+      <div class="img-overlay p-btn--2 p-btn--1">
+        <img src="images/folio/5.jpg" alt="portfolio images " />
+        <div class="overlay">
+          <a href="" target="_blank" class="common-heading">Project 6</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================== 
+          Our work counter Section Start  
+    ========================================  -->
+
+  <section class="section section-work-data">
+    <div class="container grid grid-four-column">
+      <div>
+        <h2 class="counter-numbers" data-number="2000">0+</h2>
+        <p>project completed</p>
+      </div>
+      <div>
+        <h2 class="counter-numbers" data-number="6000">0+</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div>
+        <h2 class="counter-numbers" data-number="5000">0+</h2>
+        <p>cups of coffee</p>
+      </div>
+      <div>
+        <h2 class="counter-numbers" data-number="3000">0+</h2>
+        <p>real professionals</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================== 
+          Our Services  Section Start  
+    ========================================  -->
+
+  <section class="section section-services">
+    <div class="container">
+      <h2 class="common-heading">Services Offers</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ex
+        dolores tempore possimus, mollitia vero quas
+      </p>
+    </div>
+
+    <!-- services offers card  -->
+    <div class="container grid grid-three-column">
+      <div class="service-box">
+        <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+        <h3>Web Design</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ex
-          eos commodi provident tempore possimus, mollitia vero quas.
+          “It is not because things are difficult that we do not dare; it is
+          because we do not dare that they are difficult.”
         </p>
       </div>
 
-      <div class="p-btns">
-        <div class="btn p-btn" data-btn-num="1">Website</div>
-        <div class="btn p-btn" data-btn-num="2">Youtube</div>
-        <div class="btn p-btn" data-btn-num="3">Design</div>
+      <div class="service-box">
+        <ion-icon name="logo-react" class="service-icon"></ion-icon>
+        <h3>web development</h3>
+        <p>
+          “It is not because things are difficult that we do not dare; it is
+          because we do not dare that they are difficult.”
+        </p>
       </div>
 
-      <div class="container grid grid-three-column portfolio-images">
-        <div class="img-overlay p-btn--1">
-          <img src="images/folio/1.jpg" alt="my works" />
-          <div class="overlay">
-            <a
-              href="http://charcounter.thapaonlineclass.com/"
-              target="_thapa"
-              class="common-heading"
-              >Project 1</a>
-          </div>
-        </div>
+      <div class="service-box">
+        <!-- <ion-icon name="camera-sharp" class="service-icon"></ion-icon> -->
+        <ion-icon name="camera-outline" class="service-icon"></ion-icon>
+        <h3>photography</h3>
+        <p>
+          “It is not because things are difficult that we do not dare; it is
+          because we do not dare that they are difficult.”
+        </p>
+      </div>
 
-        <div class="img-overlay p-btn--3">
-          <img src="images/folio/4.jpg" alt="my works" />
-          <div class="overlay">
-            <a
-              href="http://charcounter.thapaonlineclass.com/"
-              target="_thapa"
-              class="common-heading"
-              >Project 2
-            </a>
-          </div>
-        </div>
+      <div class="service-box">
+        <ion-icon name="phone-portrait-sharp" class="service-icon"></ion-icon>
+        <h3>Mobile Apps</h3>
+        <p>
+          “It is not because things are difficult that we do not dare; it is
+          because we do not dare that they are difficult.”
+        </p>
+      </div>
 
-        <div class="img-overlay p-btn--1">
-          <img src="images/folio/3.jpg" alt="portfolio images " />
-          <div class="overlay">
-            <a href="" target="_blank" class="common-heading">Project 3</a>
+      <div class="service-box">
+        <ion-icon name="globe-sharp" class="service-icon"></ion-icon>
+        <h3>apps interface</h3>
+        <p>
+          “It is not because things are difficult that we do not dare; it is
+          because we do not dare that they are difficult.”
+        </p>
+      </div>
+
+      <div class="service-box">
+        <ion-icon name="images-sharp" class="service-icon"></ion-icon>
+        <h3>graphic design</h3>
+        <p>
+          “It is not because things are difficult that we do not dare; it is
+          because we do not dare that they are difficult.”
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================== 
+          Our Testimonials  Section Start  
+    ========================================  -->
+  <section class="section section-testimonial">
+    <div class="container">
+      <h2 class="common-heading">Happy Client</h2>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper">
+        <!-- section start -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
+          </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/a.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
           </div>
         </div>
-        <div class="img-overlay p-btn--1 p-btn--2">
-          <img src="images/folio/4.jpg" alt="portfolio images " />
-          <div class="overlay">
-            <a href="" target="_blank" class="common-heading">Project 4</a>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
           </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/b.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
         </div>
-        <div class="img-overlay p-btn--2">
-          <img src="images/folio/5.jpg" alt="portfolio images " />
-          <div class="overlay">
-            <a href="" target="_blank" class="common-heading">Project 5</a>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
           </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/c.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
         </div>
-        <div class="img-overlay p-btn--2">
-          <img src="images/folio/5.jpg" alt="portfolio images " />
-          <div class="overlay">
-            <a href="" target="_blank" class="common-heading">Project 6</a>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
           </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/d.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
+          </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/e.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
+          </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/f.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
+          </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/g.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
+          </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/h.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- section end -->
+        <div class="swiper-slide">
+          <div class="swiper-client-msg">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, temporibus?
+            </p>
+          </div>
+          <div class="swiper-client-data grid grid-two-column">
+            <figure>
+              <img src="images/clients/a.jpg" alt="clien review">
+            </figure>
+            <div class="client-data-details">
+              <p>Alex Paul</p>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>
