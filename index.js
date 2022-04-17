@@ -1,3 +1,36 @@
+const heroSection = document.querySelector(".section-hero");
+
+// ========================================
+// creating a responsive navbar component
+// ========================================
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const headerElem = document.querySelector(".header");
+
+mobile_nav.addEventListener("click", () => {
+  headerElem.classList.toggle("active");
+});
+
+// ========================================
+// creating a sticky responsive navbar component
+// ========================================
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    // console.log(ent);
+    !ent.isIntersecting
+      ? document.body.classList.add("sticky")
+      : document.body.classList.remove("sticky");
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+observer.observe(heroSection);
+
 // ========================================
 // creating a portfolio tabbed component
 // ========================================
@@ -9,6 +42,8 @@ const p_img_elem = document.querySelectorAll(".img-overlay");
 p_btns.addEventListener("click", (e) => {
   const p_btn_clicked = e.target;
   console.log(p_btn_clicked);
+
+  if (!p_btn_clicked.classList.contains("p-btn")) return;
 
   p_btn.forEach((curElem) => curElem.classList.remove("p-btn-active"));
 
@@ -27,14 +62,14 @@ p_btns.addEventListener("click", (e) => {
   );
 });
 
-
 // swiper js code
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+new Swiper(".mySwiper", {
+  slidesPerView: 2,
   spaceBetween: 30,
-  autoplay:{
+  autoplay: {
     delay: 2500,
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
@@ -64,8 +99,6 @@ widthSize.addEventListener("change", myJsmedia);
 
 // scrooll to top button
 
-const heroSection = document.querySelector(".section-hero");
-
 const footerElem = document.querySelector(".section-footer");
 
 const scroollElement = document.createElement("div");
@@ -81,7 +114,7 @@ const scrollTop = () => {
 
 scroollElement.addEventListener("click", scrollTop);
 
-// smooth scrolling effects section
+// smooth scrolling effects
 
 const portfolioSec = document.querySelector(".section-portfolio");
 const contactSec = document.querySelector(".section-contact");
