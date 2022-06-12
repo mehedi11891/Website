@@ -135,7 +135,7 @@ const workObserver = new IntersectionObserver(
     // console.log(entry);
 
     // if (entry.isIntersecting == false)
-    if (!entry.isIntersecting) return;
+     if (!entry.isIntersecting) return;
 
     // animate number counter
 
@@ -163,6 +163,7 @@ const workObserver = new IntersectionObserver(
     });
 
     observer.unobserve(workSection);
+    // trigger off 
   },
   {
     root: null,
